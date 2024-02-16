@@ -1,0 +1,83 @@
+{% extends 'firstapp/base.html' %}
+{% block title %}Mail Sending{% endblock %}
+{% block content %}
+<style>
+
+h1::after {
+  content: " ";
+  display: block;
+  width:100%;
+  height: 4px;
+  height: 5px;
+background-color:#191717;
+transform: scaleX(0);
+transform-origin: left;
+}
+h1:hover::after {
+  transform:scale(1,0.5)
+}
+</style>
+
+<section style="background-color: white; ">
+ <div class="container py-3 container-size:10px ">
+   <div class="card shadow-lg" style=" width: 700.5px; height: 500.4px; margin-left: 200px; margin-right: 0px;">
+     <div class="card-body px-5">
+       <h1 class=" text-center py-3 ">CONTACT US</h1>
+
+           <form method="post" style="margin-left: 3rem; margin-right: 3rem;">
+               {% csrf_token %}
+             <div class="form-row">
+                <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                  <label>Full Name</label>
+                  <input type="text" name="nm" class="form-control" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                  <label>Email Id</label>
+                  <input type="email" name="sn" class="form-control" placeholder="Email ID" required>
+                </div>
+
+                 <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                  <label>Subject</label>
+                  <input type="text" name="sb" class="form-control" placeholder="Enter Subject" required>
+                </div>
+
+                 <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                  <label>Message</label>
+                  <textarea name="msg" class="form-control" placeholder="Message....."></textarea>
+                </div>
+
+                 <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                   <input type="submit" value="Send" class="form-control btn btn-primary">
+                 </div>
+
+                <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                   <input type="reset" value="Clear" class="form-control btn btn-primary">
+                </div>
+
+             </div>
+           </form>
+         </div>
+       </div>
+
+   </div>
+
+</section>
+
+<footer style="display:block; background-color: currentColor; height:180px;">
+  <div class="social"style="padding-left: 580px;padding-right: 500px;padding-top: 20px;">
+    <a href="#">
+    <i class="icon ion-social-instagram" style="margin-right: 5rem;color:whitesmoke;"></i></a>
+    <a href="#"><i class="icon ion-social-snapchat" style="margin-right: 5rem; color:whitesmoke;"></i></a>
+    <a href="#"><i class="icon ion-social-twitter"style="margin-right: 5rem;color:whitesmoke;"></i></a>
+    <a href="#"><i class="icon ion-social-facebook"style="margin-right: 5rem;color:whitesmoke;"></i></a></div>
+            <ul class="list-inline" style="margin-left: 15rem;margin-top: 2rem;">
+                <li class="list-inline-item" style="padding-right: 10rem; "><a href="#" style="color:whitesmoke";>Home</a></li>
+                <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Services</a></li>
+                <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">About</a></li>
+                <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Terms</a></li>
+                <li class="list-inline-item"style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Privacy Policy</a></li>
+            </ul>
+            <a class="copyright"style="margin-top: 8rem;margin-bottom: 6rem;margin-left: 40rem; "><i style="color: whitesmoke;font:caption;">Company Name © 2018</i></a>
+ </footer>
+{% endblock %}

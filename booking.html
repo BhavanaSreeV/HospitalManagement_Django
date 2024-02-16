@@ -1,0 +1,109 @@
+{% extends 'firstapp/base.html' %}
+{% block title %}Booking{% endblock %}
+{% block content %}
+<style>
+h2::after {
+  content: " ";
+  display: block;
+  width:100%;
+  height: 4px;
+  height: 5px;
+background-color:#191717;
+transform: scaleX(0);
+transform-origin: left;
+}
+h2:hover::after {
+  transform:scale(0.65,0.5)
+}
+</style>
+<body>
+    <section class="booking_system">
+        <div class="container">
+            <div class="card-body shadow-lg" style="margin-top:2rem;">
+                <h2 class="text-center"> BEST DOCTORS IN OUR HOSPITAL</h2>
+                    <p class="text-center">Choose the doctors accordingly and register to get the appoitment from them for the best treatment </p>
+                    <div class="col">
+                        <img src="" class="img-fluid rounded-4 d-none d-sm-block">
+                    </div>
+                    <div class="col"style="margin-top:-2rem;">
+                        <div class="text-center" style="padding-top: 3rem; padding-left: 6.5rem;">
+                            <div class="row justify-content-center">
+                               
+                               <div class="col-md-10">
+                                    <div class="row row-cols-4">
+                                        <div class="col card-body shadow-lg" style="margin: 10px;">
+                                            <a href="{% url 'cd' %}">
+                                                <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/cardiology_icon.svg" alt="icon">
+                                                <h5>Cardiology</h5>
+                                            </a>
+                                        </div>
+        
+                                        <div class="col card-body shadow-lg"style="margin: 10px;">
+                                            <a href="{% url 'neur' %}">
+                                                <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/neurology.svg" alt="icon">
+                                                <h5>Neurology</h5>
+                                            </a>
+                                        </div>
+        
+                                         <div class="col card-body shadow-lg"style="margin: 10px;">
+                                            <a href="{% url 'gst' %}">
+                                                <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/gastroenterology.svg" alt="icon">
+                                                <h5>Gastroenterology</h5>
+                                            </a>
+                                        </div>
+                                        <div class="col card-body shadow-lg"style="margin: 10px;">
+                                            <a href="{% url 'gyn' %}">
+                                                <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/gynecology.svg" alt="icon">
+                                                <h5>Gynecology</h5>
+                                            </a>
+                                        </div>
+        
+                                        <div class="col card-body shadow-lg"style="margin: 10px;">
+                                            <a href="{% url 'drm' %}">
+                                                <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/dermatology.svg" alt="icon">
+                                                <h5>Dermatology</h5>
+                                            </a>
+                                        </div>
+        
+                                        <div class="col card-body shadow-lg"style="margin: 10px;">
+                                            <a href="https://www.apollohospitals.com/book-doctor-appointment/opthalmologist/?utm_campaign=opthalmologist&amp;utm_source=home&amp;utm_medium=specialities" class="pg_widget" id="COE_Ophthalmology">
+                                                <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/ophthalmology.svg" alt="icon">
+                                                <h5>Ophthalmology</h5>
+                                            </a>
+                                        </div>
+        
+                                        <div class="col card-body shadow-lg"style="margin: 10px;">
+                                            <a href="https://www.apollohospitals.com/book-doctor-appointment/pediatrician/?utm_campaign=pediatrician&amp;utm_source=home&amp;utm_medium=specialities" class="pg_widget" id="COE_Pediatrics">
+                                                <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/paediatricurology.svg" alt="icon">
+                                                <h5>Pediatrics</h5>
+                                            </a>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+<footer style="display:block; background-color:currentColor; height:180px;">
+    <div class="social"style="padding-left: 580px;padding-right: 500px;padding-top: 20px;">
+      <a href="#">
+      <i class="icon ion-social-instagram" style="margin-right: 5rem;color:whitesmoke;"></i></a>
+      <a href="#"><i class="icon ion-social-snapchat" style="margin-right: 5rem; color:whitesmoke;"></i></a>
+      <a href="#"><i class="icon ion-social-twitter"style="margin-right: 5rem;color:whitesmoke;"></i></a>
+      <a href="#"><i class="icon ion-social-facebook"style="margin-right: 5rem;color:whitesmoke;"></i></a></div>
+              <ul class="list-inline" style="margin-left: 15rem;margin-top: 2rem;">
+                  <li class="list-inline-item" style="padding-right: 10rem; "><a href="#" style="color:whitesmoke";>Home</a></li>
+                  <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Services</a></li>
+                  <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">About</a></li>
+                  <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Terms</a></li>
+                  <li class="list-inline-item"style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Privacy Policy</a></li>
+              </ul>
+              <a class="copyright"style="margin-top: 8rem;margin-bottom: 6rem;margin-left: 40rem; "><i style="color: whitesmoke;font:caption;">Company Name © 2018</i></a>
+   </footer>
+{% endblock %}
