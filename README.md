@@ -6,3 +6,8 @@
 ![Screenshot 2024-02-17 000713](https://github.com/BhavanaSreeV/HospitalManagement_Django/assets/114128627/bd19dd07-25f9-410a-b7b5-2670026fd3be)
 ![Screenshot 2024-02-17 000722](https://github.com/BhavanaSreeV/HospitalManagement_Django/assets/114128627/ef1019a5-7e70-4200-aab0-4c55a70a80cb)
 ![Screenshot 2024-02-17 000734](https://github.com/BhavanaSreeV/HospitalManagement_Django/assets/114128627/70c603f1-1f8c-4f7d-9aea-4f6b96446fa2)
+
+![Screenshot 2024-02-17 000743](https://github.com/BhavanaSreeV/HospitalManagement_Django/assets/114128627/df750d6d-3ea4-4da7-94ea-42fca44f7bd2)
+![Screenshot 2024-02-17 000757](https://github.com/BhavanaSreeV/HospitalManagement_Django/assets/114128627/0781d9c0-33c4-4815-bf66-f467d5eafb81)
+
+
