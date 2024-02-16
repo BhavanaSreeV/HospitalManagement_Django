@@ -1,0 +1,90 @@
+{% extends 'firstapp/base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<style>
+    h2{
+        color:#164c6f;
+    }
+    body{
+  font-family: times new roman;
+  font-size: large;
+}
+</style>
+<body>
+    <main>
+        <div class="container mt-5">
+            <h1 class="text-center" style="color: #f36c1b; font-size:45px;">About Our Hospital</h1>
+            <p>
+                Welcome to Your Hospital, a leading healthcare provider committed to delivering high-quality medical services to our patients. 
+                Our hospital has been serving the community for [number of years] and continues to strive for excellence in patient care and medical expertise.
+            </p>
+
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to improve the health and well-being of the community by providing comprehensive, compassionate, and patient-centered care. 
+                We aim to be the healthcare provider of choice for patients seeking excellence in medical services.
+            </p>
+
+            <h2>Our Vision</h2>
+            <p>
+                Our vision is to be a premier healthcare institution that sets new standards in medical excellence, patient satisfaction, and community outreach. 
+                We envision a healthier and happier community where everyone has access to top-notch healthcare services.
+            </p>
+
+            <h2>Our Services</h2>
+            <p>
+                At Your Hospital, we offer a wide range of medical services, including but not limited to:
+            </p>
+            <ul>
+                <li>General Medicine</li>
+                <li>Surgery</li>
+                <li>Obstetrics and Gynecology</li>
+                <li>Pediatrics</li>
+                <li>Cardiology</li>
+                <li>Neurology</li>
+                <li>Gastroenterology</li>
+                <!-- Add more services offered by your hospital -->
+            </ul>
+
+            <h2>Our Team</h2>
+            <p>
+                Our hospital is proud to have a team of highly skilled and compassionate healthcare professionals. 
+                From our experienced doctors and nurses to our dedicated support staff, we all work together to ensure the best possible care for our patients.
+            </p>
+
+            <h2>Community Involvement</h2>
+            <p>
+                We are deeply committed to giving back to the community we serve. Through various outreach programs and initiatives, we aim to promote health and wellness in the region.
+            </p>
+
+            <h2>Contact Us</h2>
+            <p>
+                For inquiries or to schedule an appointment, please contact us through the following channels:
+                <br>
+                Phone: [Hospital Phone Number]
+                <br>
+                Email: [Hospital Email Address]
+                <br>
+                Address: [Hospital Address]
+            </p>
+        </div>
+    </main>
+    <footer style="display:block; background-color: currentColor; height:180px;">
+        <div class="social"style="padding-left: 580px;padding-right: 500px;padding-top: 20px;">
+          <a href="#">
+          <i class="icon ion-social-instagram" style="margin-right: 5rem;color:whitesmoke;"></i></a>
+          <a href="#"><i class="icon ion-social-snapchat" style="margin-right: 5rem; color:whitesmoke;"></i></a>
+          <a href="#"><i class="icon ion-social-twitter"style="margin-right: 5rem;color:whitesmoke;"></i></a>
+          <a href="#"><i class="icon ion-social-facebook"style="margin-right: 5rem;color:whitesmoke;"></i></a></div>
+                  <ul class="list-inline" style="margin-left: 15rem;margin-top: 2rem;">
+                      <li class="list-inline-item" style="padding-right: 10rem; "><a href="#" style="color:whitesmoke";>Home</a></li>
+                      <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Services</a></li>
+                      <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">About</a></li>
+                      <li class="list-inline-item" style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Terms</a></li>
+                      <li class="list-inline-item"style="padding-right: 10rem;"><a href="#" style="color:whitesmoke">Privacy Policy</a></li>
+                  </ul>
+                  <a class="copyright"style="margin-top: 8rem;margin-bottom: 6rem;margin-left: 40rem; "><i style="color: whitesmoke;font:caption;">Company Name © 2018</i></a>
+       </footer>
+</body>
+
+{% endblock %}
